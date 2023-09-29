@@ -1,12 +1,13 @@
 {
-  "name": "AtvdServidor",
+  "name": "AtvdWEB",
   "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "node ace serve --watch",
     "build": "node ace build --production",
-    "start": "node server.js",
-    "test": "node ace test"
+    "start": "node build/server.js",
+    "test": "node ace test",
+    "migrate": "node ace migration:run"
   },
   "devDependencies": {
     "@adonisjs/assembler": "^5.9.5",
